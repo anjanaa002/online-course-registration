@@ -11,6 +11,7 @@ A full-stack web application for managing online course registrations with user 
 - Browse available courses
 - Enroll in courses
 - View profile & enrolled courses
+  
 
 ### 🛠️ Admin Features
 - Add new courses
