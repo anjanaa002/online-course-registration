@@ -178,6 +178,7 @@ const User = require("../models/User");
 const { protect } = require("../middleware/authMiddleware");
 
 const router = express.Router();
+const FRONTEND_URL = "https://online-course-registration-lime.vercel.app";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 router.post("/create-checkout-session", protect, async (req, res) => {
@@ -212,8 +213,8 @@ router.post("/create-checkout-session", protect, async (req, res) => {
           quantity: 1,
         },
       ],
-      success_url: `http://localhost:5173/user/payment-success?courseId=${course._id}`,
-      cancel_url: `http://localhost:5173/courses`,
+      success_url: `${FRONTEND_URL}/user/payment-success?courseId=${course._id}`,
+      cancel_url: `${FRONTEND_URL}/courses`,
     });
 
     res.json({ url: session.url });
