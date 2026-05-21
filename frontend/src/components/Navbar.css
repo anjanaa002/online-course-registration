@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e40af; /* blue-800 */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-links button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #1e40af;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.navbar-links button:hover {
+  background-color: #93c5fd; /* light blue */
+}

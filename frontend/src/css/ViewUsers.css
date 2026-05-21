@@ -1,0 +1,68 @@
+/* Main Container */
+.users-container {
+  padding: 30px;
+  background-color: #f4f6fb;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Page Heading */
+.users-container h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* User Card */
+.user-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* User Text */
+.user-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* No Courses */
+.no-courses {
+  font-style: italic;
+  color: #888;
+}
+
+/* Course Item */
+.course-item {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #eef1ff;
+  border-radius: 8px;
+  font-size: 13px;
+  border-left: 4px solid #4f46e5;
+}
+
+.course-item p {
+  margin: 3px 0;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .user-card {
+    padding: 15px;
+  }
+
+  .users-container h2 {
+    font-size: 20px;
+  }
+}
